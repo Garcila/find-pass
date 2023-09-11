@@ -1,0 +1,123 @@
+/* FONTS USED */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:wght@200&display=swap");
+
+:root {
+	/* VARIABLES */
+	--font-color: #a1a1a1;
+	--back-color: #eef0f4;
+	--decoration-color: #ff69b4;
+	--decoration-pure: #ffffff;
+	--button-text-color: #8a8888;
+
+	background: var(--back-color);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+	margin-top: 1rem;
+}
+
+main {
+	height: 100%;
+	width: 350px;
+	font-family: "Nunito Sans", sans-serif;
+	color: var(--font-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--back-color);
+	border-radius: 5%;
+	box-shadow: inset 9.91px 9.91px 15px #d9dade,
+		inset -9.91px -9.91px 15px var(--decoration-pure);
+	padding: 5rem 4rem;
+}
+
+h1 {
+	font-family: "Lato", sans-serif;
+	margin-top: 0;
+	text-decoration: underline;
+	text-decoration-thickness: 0.2em;
+	text-decoration-color: var(--decoration-color);
+	position: sticky;
+}
+
+button {
+	width: 10rem;
+	height: 10rem;
+	margin-top: 2rem;
+	background: var(--back-color);
+	border-radius: 100%;
+	box-shadow: 9.91px 9.91px 15px #d9dade,
+		-9.91px -9.91px 15px var(--decoration-pure);
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 4rem;
+	color: var(--button-text-color);
+	border: none;
+}
+
+button:hover {
+	border: 3px solid var(--decoration-pure);
+	color: #aaa9a9;
+	outline: 1px solid var(--decoration-pure);
+}
+
+button:focus {
+	outline: 1px solid var(--decoration-pure);
+}
+
+button:active {
+	box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+	outline: 1px solid var(--decoration-pure);
+}
+button:active .go {
+	animation-name: spin;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	outline: none;
+}
+
+.field {
+	padding: 75px 5px 5px 5px;
+}
+.field input {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 20px;
+	color: var(--decoration-color);
+	padding: 20px 10px 20px 10px;
+}
+.code {
+	margin-bottom: 30px;
+	border-radius: 25px;
+	padding: 1rem;
+	box-shadow: inset 8px 8px 8px #dadddf, inset -8px -8px 8px #ffffff;
+	text-align: center;
+}
+.found {
+	font-weight: bolder;
+	margin-top: 3rem;
+	width: 80%;
+	color: var(--decoration-color);
+	font-size: 20px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(1200deg);
+	}
+	100% {
+		transform: rotate(2400deg);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	li {
+		text-align: right;
+	}
+}
