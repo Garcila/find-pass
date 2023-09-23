@@ -8,9 +8,13 @@
 	--decoration-color: #ff69b4;
 	--decoration-pure: #ffffff;
 	--button-text-color: #8a8888;
+	--dm-yellow: #f8b234;
+	--dm-white: #ffffff;
+	--dm-font: #505365;
+	/* --dm-found: rgb(176, 176, 177) 5; */
+	--dm-found: #ff6457;
 
-	background: var(--back-color);
-	height: 100%;
+	background: var(--dm-yellow);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -19,10 +23,10 @@
 }
 
 main {
-	height: 100%;
+	height: 70vh;
 	width: 350px;
 	font-family: "Nunito Sans", sans-serif;
-	color: var(--font-color);
+	color: var(--dm-font);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -38,7 +42,8 @@ h1 {
 	margin-top: 0;
 	text-decoration: underline;
 	text-decoration-thickness: 0.2em;
-	text-decoration-color: var(--decoration-color);
+	text-underline-offset: 10px;
+	text-decoration-color: var(--dm-yellow);
 	position: sticky;
 }
 
@@ -85,8 +90,8 @@ button:active .go {
 	border: none;
 	outline: none;
 	background: none;
-	font-size: 20px;
-	color: var(--decoration-color);
+	font-size: 25px;
+	color: var(--dm-font);
 	padding: 20px 10px 20px 10px;
 }
 .code {
@@ -97,11 +102,17 @@ button:active .go {
 	text-align: center;
 }
 .found {
-	font-weight: bolder;
-	margin-top: 3rem;
-	width: 80%;
-	color: var(--decoration-color);
-	font-size: 20px;
+	text-align: center;
+	font-weight: 900;
+	margin-top: 3.5rem;
+	background-color: var(--dm-found);
+	color: var(--dm-white);
+	font-size: 25px;
+
+	/* margin-bottom: 30px; */
+	border-radius: 25px;
+	padding: 1rem;
+	box-shadow: inset 8px 8px 8px #fe6b5d, inset -8px -8px 8px #fc897e;
 }
 
 @keyframes spin {
