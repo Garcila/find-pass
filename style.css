@@ -51,6 +51,7 @@ button {
 	width: 10rem;
 	height: 10rem;
 	margin-top: 2rem;
+	margin-bottom: 1rem;
 	background: var(--back-color);
 	border-radius: 100%;
 	box-shadow: 9.91px 9.91px 15px #d9dade,
@@ -94,6 +95,9 @@ button:active .go {
 	color: var(--dm-font);
 	padding: 20px 10px 20px 10px;
 }
+input:invalid {
+	color: var(--dm-found);
+}
 .code {
 	margin-bottom: 30px;
 	border-radius: 25px;
@@ -104,12 +108,9 @@ button:active .go {
 .found {
 	text-align: center;
 	font-weight: 900;
-	margin-top: 3.5rem;
 	background-color: var(--dm-found);
 	color: var(--dm-white);
 	font-size: 25px;
-
-	/* margin-bottom: 30px; */
 	border-radius: 25px;
 	padding: 1rem;
 	box-shadow: inset 8px 8px 8px #fe6b5d, inset -8px -8px 8px #fc897e;

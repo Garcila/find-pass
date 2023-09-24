@@ -23,7 +23,15 @@
 			<h1>Code Finder</h1>
 			<div class="field">
 				<i class="fa-solid fa-lock" style="color: #c1c2c2"></i>
-				<input class="code" type="text" placeholder="Code to find" />
+
+				<input
+					class="code"
+					type="text"
+					placeholder="Number code to find"
+					required
+					pattern="[0-9]*"
+					maxlength="8"
+				/>
 			</div>
 			<button type="submit"><div class="go">GO!</div></button>
 			<div class="found"></div>
