@@ -24,9 +24,17 @@ button.addEventListener("click", e => {
 
 function findPassword(code) {
 	while (guess.toString() !== code) {
-		https: guess = count.toString();
+		guess = count.toString();
 		if (guess.length < code.length) {
-			guess = `0${guess.toString()}`;
+			let difference = code.length - guess.length;
+			console.log(difference);
+			let zeros = "";
+			for (let i = 0; i < difference; i++) {
+				zeros += "0";
+			}
+			console.log(zeros);
+			guess = `${zeros}${guess.toString()}`;
+			console.log(guess);
 		}
 		count++;
 	}
