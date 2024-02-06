@@ -105,6 +105,7 @@ input:invalid {
 	box-shadow: inset 8px 8px 8px #dadddf, inset -8px -8px 8px #ffffff;
 	text-align: center;
 }
+
 .found {
 	text-align: center;
 	font-weight: 900;

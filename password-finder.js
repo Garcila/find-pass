@@ -27,14 +27,11 @@ function findPassword(code) {
 		guess = count.toString();
 		if (guess.length < code.length) {
 			let difference = code.length - guess.length;
-			console.log(difference);
 			let zeros = "";
 			for (let i = 0; i < difference; i++) {
 				zeros += "0";
 			}
-			console.log(zeros);
 			guess = `${zeros}${guess.toString()}`;
-			console.log(guess);
 		}
 		count++;
 	}
